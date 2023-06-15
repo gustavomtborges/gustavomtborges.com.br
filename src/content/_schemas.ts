@@ -14,4 +14,16 @@ export const blogSchema = z
   })
   .strict();
 
+export const shortSchema = z
+  .object({
+    author: z.string().optional(),
+    pubDatetime: z.date(),
+    title: z.string(),
+    postSlug: z.string().optional(),
+    featured: z.boolean().optional(),
+    draft: z.boolean().optional(),
+    tags: z.array(z.string()).default(["others"]),
+  })
+  .strict();
+
 export type BlogFrontmatter = z.infer<typeof blogSchema>;

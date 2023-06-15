@@ -23,7 +23,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1>Bio</h1>
+      <h1>Gustavo Martins T. Borges</h1>
       <a
         target="_blank"
         href="/rss.xml"
@@ -41,19 +41,19 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </a>
 
       <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
-      </p>
-      <p>
-        Read the blog posts or check
-        <LinkButton
+        Bachalor in Software Enginnering from Universidade Federal de Goiás. I
+        work in the IT market since 2011, from <em>startups</em> to <em
+          >big techs</em
+        >. I'm always got interested in practices that leverage <em
+          >design quality, and operation</em
+        >. Later in 2015, I discovered that this has a name: <em>DevOps</em>.
+        Currently working as an independent consultant in Software Engineering
+        and Solution Architecture. Now, focused on DevOps practices at <LinkButton
           className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
-          href="https://github.com/satnaing/astro-paper#readme"
+          href="https://tipspace.gg"
         >
-          README
-        </LinkButton> for more info.
+          tipspace.gg
+        </LinkButton>
       </p>
       {
         // only display if at least one social link is enabled
@@ -129,7 +129,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
   }
   #hero .rss-link {
-    @apply mb-6;
+    @apply mb-6 block;
   }
   #hero .rss-icon {
     @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
